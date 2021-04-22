@@ -1,7 +1,5 @@
-//Calcule o valor de 5!:
-var fatorial = 5
-var resultado = 1
-for (var i = fatorial; i>1; i--){
-    resultado *= i
-}
-console.log(`O fatorial de ${fatorial} é: ${resultado}`)
+//Dado n = 5, 5! é igual a: 
+let fatorial = function fat(n){
+    return n<2 ? 1 : n*fat(n-1) 
+    }
+    console.log(fatorial(5))
