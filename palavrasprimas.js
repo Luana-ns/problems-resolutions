@@ -1,4 +1,6 @@
-//Escrever um programa para determinar se uma palavra é uma palavra prima ou não. Uma palavra é uma palavra prima se a soma de suas letras é um número primo. Cada letra possui um valor específico, de modo que a = 1, z = 26, A = 27 e Z = 52.
+//Escrever um programa para determinar se uma palavra é uma palavra prima ou não. 
+//Uma palavra é uma palavra prima se a soma de suas letras é um número primo. 
+//Cada letra possui um valor específico, de modo que a = 1, z = 26, A = 27 e Z = 52.
 
 let getNumeros = function (palavra){
     let numeros = []
