@@ -30,4 +30,4 @@ function isPrime(soma){
 
 //Teste: 
 let exemplos = [ 'UFRN', 'contest', 'AcM']; 
-let resultado = exemplos.map(palavra => console.log(palavra, ' : ', isPrime(valor(palavra))))
+let resultado = exemplos.map(palavra => console.log(palavra, ': ', isPrime(valor(palavra))))
