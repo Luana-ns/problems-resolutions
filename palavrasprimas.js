@@ -2,7 +2,7 @@
 //Uma palavra é uma palavra prima se a soma de suas letras é um número primo. 
 //Cada letra possui um valor específico, de modo que a = 1, z = 26, A = 27 e Z = 52.
 
-function primo(palavra){
+function valor(palavra){
     soma = 0
     for (let z = 0; z < palavra.length; z++){
         let numero = palavra.charCodeAt(z)
@@ -18,17 +18,16 @@ function primo(palavra){
 //Verificar se a soma dos elementos é um número primo: 
 function isPrime(soma){
   if (soma < 2) {
-    return 'Não é uma palavra prima'
+    return 'Não é uma palavra prima.'
   } 
   for (i = 2; i < soma; i++){
     if (soma % i == 0){
-      return 'Não é uma palavra prima'
+      return 'Não é uma palavra prima.'
     } 
   }
-  return 'É uma palavra prima'
+  return 'É uma palavra prima.'
 }
 
-//Teste 
-let palavra = 'contest' 
-let resultado = isPrime(primo(palavra))
-console.log(resultado)
+//Teste: 
+let exemplos = [ 'UFRN', 'contest', 'AcM']; 
+let resultado = exemplos.map(palavra => console.log(palavra, ': ', isPrime(valor(palavra))))
