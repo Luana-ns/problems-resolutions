@@ -1,6 +1,7 @@
 //Escrever um programa para determinar se uma palavra é uma palavra prima ou não. 
 //Uma palavra é uma palavra prima se a soma de suas letras é um número primo. 
 //Cada letra possui um valor específico, de modo que a = 1, z = 26, A = 27 e Z = 52.
+//Exercício completo se encontra no link: https://br.spoj.com/problems/PAPRIMAS/
 
 function convertePalavraEmValor(palavra){
     let soma = 0
