@@ -1,12 +1,11 @@
-// q = quantidade de páginas lidas por dia
-// d = dias que adiantaria a leitura se estivesse lendo p páginas por dia
-// p = páginas
-// total = (q * d * p) /(p - q)
+// Resolução do exercício que se encontra no site: https://www.urionlinejudge.com.br/judge/pt/problems/view/1542
 
-function lerLivros( q, d, p) {
-    total = (q * d * p)/(p - q)
-    if (total == 1){
-        console.log(`${total} pagina`)
-    } else console.log(`${total} paginas`)
+function lendoLivros( quantidadeDePaginasLidas, diasAdiantadosSeFossemLidasMaisPaginas, paginasQuePoderiamSerLidas) {
+    totalDePaginasDoLivro = (quantidadeDePaginasLidas * diasAdiantadosSeFossemLidasMaisPaginas * paginasQuePoderiamSerLidas)/(paginasQuePoderiamSerLidas - quantidadeDePaginasLidas)
+
+    if (totalDePaginasDoLivro == 1){
+        console.log(`${totalDePaginasDoLivro} pagina`)
+    } else console.log(`${totalDePaginasDoLivro} paginas`)
 }
-lerLivros(3, 16, 5)
+// Teste: 
+lendoLivros(3, 16, 5)
