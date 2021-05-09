@@ -1,4 +1,4 @@
-//Sejam a=8 e b=5 números dados
+//Sejam a = 8 e b = 5 números dados.
 imprimeSoma(8, 5);
 function imprimeSoma(a, b) {
   console.log(soma(a, b));
