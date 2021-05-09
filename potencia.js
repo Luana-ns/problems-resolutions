@@ -1,7 +1,4 @@
-//Dado n = 8:
-// function imprimeQuad(n){
-//     console.log(quad(n))
-// }
+//Dado n = 7:
 
 function calculaQuadrado (numero){
     return (`O quadrado de ${numero} é: ` + Number(numero**2))
