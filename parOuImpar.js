@@ -1,28 +1,15 @@
-let n = 1;
-function parOuImpar(jogadores, numbers){
-    console.log(`Teste ${n}`)
-    n++
-    for ( let i = 0; i < numbers.length; i++){
-        let soma = 0
-        for (let j = 0; j < numbers[i].length; j++){
-        soma += numbers[i][j]}
-            
-        if (soma % 2 === 0)
-            console.log(jogadores[0]);
-        else 
-            console.log(jogadores[1]);   
-    }  
-    //console.log(" ")
-    return '  '
-} 
-
-//Testes:
-const players = ['Pedro', 'Paulo']
-const numbers = [[2 , 4] , [ 3 , 5] , [1 , 0]]
-const players2 = ['Claudio', 'Carlos']
-const numbers2 = [[1 , 5] , [2 , 3]]
-
-console.log(parOuImpar(players, numbers))
-console.log(parOuImpar(players2, numbers2))
-    
-
+function playWinner (players, play){
+    if ((play[0] + play[1]) % 2 === 0){
+        return players[0]
+    } 
+    return players[1]
+}
+const testCase = [[['Pedro', 'Paulo'], ['Claudio', 'Carlos']], [[[2 , 4] , [ 3 , 5] , [1 , 0]] , [[1 , 5] , [2 , 3]]]]
+for (let i = 0; i < testCase.length -1; i++){
+    for (let j = 0; j < testCase[1].length; j++){   
+        console.log(`Teste ${j + 1}`)
+        for (let k = 0; k < testCase[1][j].length; k++ ){
+        console.log(playWinner(testCase[0][j],testCase[1][j][k]))
+        }
+    }    
+}
