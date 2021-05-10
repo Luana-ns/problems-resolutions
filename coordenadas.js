@@ -1,3 +1,5 @@
+//Resolução do problema que se encontra no link: https://www.urionlinejudge.com.br/judge/pt/problems/view/1041
+
 function coordinates(x,y){
     if (x == 0 && y == 0){
         console.log('Origem')
