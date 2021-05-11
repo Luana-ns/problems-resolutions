@@ -2,22 +2,20 @@
 
 function coordinates(x,y){
     if (x == 0 && y == 0){
-        console.log('Origem')
+        return 'Origem'
     } else if (x == 0){
-        console.log ('Eixo Y')
+        return'Eixo Y'
     } else if (y == 0){
-        console.log ('Eixo X')
+        return 'Eixo X'
     } else if (x > 0 && y > 0){
-        console.log('Q1')
+        return 'Q1'
     } else if (x < 0 && y > 0){
-        console.log ('Q2')
+        return  'Q2'
     } else if (x < 0 && y < 0){
-        console.log('Q3')
-    } else if (x > 0 && y < 0){
-        console.log('Q4')
-    }
+        return 'Q3'
+    } else return 'Q4'
 }
 //Tests:
-coordinates(4.5, -2.2)
-coordinates(0.1, 0.1)
-coordinates(0, 0)
+console.log(coordinates(4.5, -2.2))
+console.log(coordinates(0.1, 0.1))
+console.log(coordinates(0, 0))
