@@ -1,3 +1,4 @@
+//Rascunho inicial
 function safeBox (valorJoao, valorZe){
     let result = 0
     result = (valorJoao + valorZe) 
