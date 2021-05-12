@@ -1,3 +1,5 @@
+// Resolução do exercício que se encontra no link: https://br.spoj.com/problems/PAR/
+
 function playWinner (players, play){
     if ((play[0] + play[1]) % 2 === 0){
         return players[0]
