@@ -5,14 +5,18 @@ function checkPalindromo(word) {
     for (let i = 0; i < word.length / 2; i++) {
         if (word[i] != word[word.length - i - 1]) {
             return false
-        } else return true
-    }
+        } 
+    } 
+    return true
 }
 
 
 //Teste: 
-let testCase = ['ovo', 'rio', 'ana', 'creme', 'amor a roma'];
-for (let i = 0; i < testCase.length; i++) {
-    console.log(checkPalindromo(testCase[i]))
+let testCase = ['ovo', 'rio', 'ana', 'creme', 'amor a roma', 'ole maracuja caju caramelo'];
+for (const word of testCase) {
+    console.log(checkPalindromo(word))
 }
 
+
+// Ignorar o case sensitive; 
+// Ignorar os espaços;
