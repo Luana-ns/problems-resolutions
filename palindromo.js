@@ -12,11 +12,10 @@ function checkPalindromo(word) {
 
 
 //Teste: 
-let testCase = ['ovo', 'rio', 'ana', 'creme', 'amor a roma', 'ole maracuja caju caramelo'];
+let testCase = ['ovo', 'rio', 'ana', 'creme', 'amor a roma', 'manga', 'ole maracuja caju caramelo'];
 for (const word of testCase) {
-    console.log(checkPalindromo(word))
+    console.log(checkPalindromo(word.replace(/\s+/g,'')))
 }
-
-
+ 
 // Ignorar o case sensitive; 
 // Ignorar os espaços;
