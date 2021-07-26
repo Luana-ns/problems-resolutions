@@ -1,9 +1,10 @@
 // Exercício se encontra no link: 
 // https://www.urionlinejudge.com.br/judge/pt/problems/view/1012
+// Testes realizados com os dois exemplos apresentados no site.
 
-let a = 3.0;
-let b = 4.0;
-let c = 5.2;
+let a = 12.7;
+let b = 10.4;
+let c = 15.2;
 
 function triangulo (a,c) {
     let areatriangulo = parseFloat(a*c)/2;
