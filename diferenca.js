@@ -1,3 +1,5 @@
+// Exercício "Diferença" se encontra no site:
+// https://www.urionlinejudge.com.br/judge/pt/problems/view/1007
 function difference(a, b, c, d){
     let difference = (a * b - c * d)
     return difference
