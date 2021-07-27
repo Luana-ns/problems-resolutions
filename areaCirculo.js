@@ -4,9 +4,11 @@
 
 const n = 3.14159;
 function areaCirculo(raio){
-    let area = n * (Number(raio) * Number(raio))
-    return area 
+    let area = n * (Number(raio) * Number(raio));
+    return area.toFixed(4); 
 }
 
-testCase = areaCirculo(100.64)
-console.log(`A = ${testCase.toFixed(4)}`)
+testCase = [2.00, 100.64, 150.00];
+for (raio of testCase){
+    console.log(`A = ${areaCirculo(raio)}`);
+}
