@@ -1,18 +1,23 @@
 //https://br.spoj.com/problems/PALAVRMG/
 
 function orderWord(word) {
-    for (let i = 0; i < word.length; i++) {
-        for (let j =1; j < word.length +1; j++){
-            if (word.charCodeAt(i) > word.charCodeAt(j)) {
-                return false
-            } 
+    let countOrder = 0;
+    for (let i = 0; i < word.length - 1; i++) {
+        if (word[i + 1] > word[i]) {
+        countOrder += 1;
         }
-    } 
-    return true
-}
+    }
+    let isOrdered = ""
+    if (countOrder == (word.length - 1)){
+        isOrdered = "O";
+    } else {
+        isOrdered = "N";
+    }
+    return isOrdered;
+};
 
 // Test: 
-let testCase = ['a', 'belo', 'fiNo', 'batata', 'abracadabra'];
+let testCase = ['a', 'belo', 'fino', 'Cruz', 'flor', 'batata', 'abracadabra','aaaabc'];
 for (const word of testCase) {
-    console.log(orderWord(word))
-}
+    console.log(`${word}: ${orderWord(word)}`)
+};
