@@ -1,4 +1,5 @@
-//https://br.spoj.com/problems/PALAVRMG/
+// This problem can be found at the link:
+// https://br.spoj.com/problems/PALAVRMG/
 
 function orderWord(word) {
     let countOrder = 0;
