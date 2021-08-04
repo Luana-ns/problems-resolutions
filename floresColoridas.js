@@ -1,4 +1,6 @@
+// Este exercício se encontra no link: 
 // https://www.urionlinejudge.com.br/judge/pt/problems/view/1219
+
 
 let a = 4; 
 let b = 30;
@@ -36,3 +38,5 @@ function areasColoridas(){
 }
 
 areasColoridas(triangulo());
+
+// Testes realizados e resultados tiveram êxito a partir dos exemplos do site; 
